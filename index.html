@@ -1,10 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chinisi ⚡ Gen‑Z</title>
+  <meta name="description" content="Chinisi — a bold, Gen‑Z style landing page." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-  <h1>Hello, world! 🌍</h1>
-  <p>Welcome to my new site.</p>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#home">
+        <img src="assets/logo.svg" alt="Chinisi logo" class="logo">
+        <span>Chinisi</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#features">Vibes</a>
+        <a href="#projects">Drops</a>
+        <a href="#contact" class="btn small neon">Contact</a>
+      </nav>
+      <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <h1>⚡ Welcome to <span class="highlight">Chinisi</span> 🌈</h1>
+        <p class="tagline">Your tiny corner of the internet — bold, fast, &amp; unapologetically Gen‑Z.</p>
+        <div class="cta">
+          <a class="btn neon" href="#projects">Explore</a>
+          <a class="btn ghost" href="#contact">Let’s Connect</a>
+        </div>
+        <div class="badges">
+          <span class="badge">No framework</span>
+          <span class="badge">Super fast</span>
+          <span class="badge">GitHub Pages ready</span>
+        </div>
+      </div>
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="orb orb-c"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About 🧃</h2>
+        <p>This is a zero‑build static site you can edit in seconds. Swap colors, text, and tiles. When you're ready for the full build, we’ll plug in pages, a blog, and more.</p>
+      </div>
+    </section>
+
+    <section id="features" class="section alt">
+      <div class="container">
+        <h2>Vibes ✨</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Neon gradients</h3>
+            <p>Animated backgrounds with aqua‑pink energy.</p>
+          </div>
+          <div class="card">
+            <h3>Playful type</h3>
+            <p>Poppins + Space Grotesk for crisp headlines.</p>
+          </div>
+          <div class="card">
+            <h3>Micro‑motion</h3>
+            <p>Soft hovers, tilt effects, and subtle parallax.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Drops 🚀</h2>
+        <div class="grid-3">
+          <a class="tile" href="#" aria-label="Project One">
+            <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=1200&auto=format&fit=crop" alt="Project cover 1">
+            <div class="tile-body"><h4>Prototype #1</h4><p>Clean and minimal concept.</p></div>
+          </a>
+          <a class="tile" href="#" aria-label="Project Two">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Project cover 2">
+            <div class="tile-body"><h4>Prototype #2</h4><p>Gradient candy with glow.</p></div>
+          </a>
+          <a class="tile" href="#" aria-label="Project Three">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200&auto=format&fit=crop" alt="Project cover 3">
+            <div class="tile-body"><h4>Prototype #3</h4><p>Bold shapes and motion.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container narrow">
+        <h2>Contact 📮</h2>
+        <p>Say hi or drop a collab idea.</p>
+        <div class="contact">
+          <a class="btn neon" href="mailto:hello@chinisi.com">hello@chinisi.com</a>
+          <a class="btn ghost" href="https://github.com/chandanmallesh/chinisi" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Chinisi • Made with 💜</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#features">Vibes</a>
+        <a href="#projects">Drops</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
